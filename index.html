@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Soliman Academy Survey Form</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1 id="title">Soliman Academy Survey Form</h1>
+            <p id="description">
+                Thank you for taking the time to help us improve our Academy
+            </p>
+        <div class="container">
+            <form id="survey-form">
+                <fieldset>
+                    <label for="name" id="name-label">Name: <input id="name" type="text" placeholder="Please enter your name" name="name" required /></label>
+                    <label for="email" id="email-label">Email: <input id="email" type="email" placeholder="Please enter your email" name="email" required /></label>
+                    <label for="age" id="number-label">Age: <input id="number" type="number" placeholder="Please enter your age" name="age" min="7" max="80" /></label>
+                </fieldset>
+                <fieldset>
+                    <p class="quest">Which option best describes your current role?</p>
+                    <select id="dropdown">
+                        <option value="">Select one</option>
+                        <option value="1">Jumbing</option>
+                        <option value="2">Maintinance</option>
+                    </select>
+                    <p class="quest">Would you recommend Soliman Academy to your friends?</p>
+                    <label class="recommend"><input type="radio" name="recommendation" value="1" />Definitely</label>
+                    <label class="recommend"><input type="radio" name="recommendation" value="2" />Maybe</label>
+                    <label class="recommend"><input type="radio" name="recommendation" value="3" />Not sure</label>
+                    <p class="quest">Our new-born foal, what do you like to name her?</p>
+                    <label for="foal-name"><input type="checkbox" name="foal-name" value="1">Gazala</label>
+                    <label for="foal-name"><input type="checkbox" name="foal-name" value="2">Boshra</label>
+                    <label for="foal-name"><input type="checkbox" name="foal-name" value="3">Gaza</label>
+                    <label class="quest">Any suggesions??<textarea rows="10"></textarea></label>
+                </fieldset>
+                <input id="submit" type="submit" />
+            </form>
+        </div>
+        
+    </body>
+</html>
